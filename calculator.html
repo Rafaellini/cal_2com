@@ -2,16 +2,30 @@
 <title>Calculator</title><meta charset="utf-8">
 <script type="text/javascript">
 
+//Calcula el inverso de un número
 function inverse() {
   var num = document.getElementById("n1");
   num.value = 1/num.value;
 }
+
+//Calcula el cuadrado de un número
+function square() {
+  var num = document.getElementById("n1");
+  num.value = num.value * num.value;
+}
+
 </script>
 </head>
 <body>
-  Number:
-  <input type="text" id="n1"><p>
 
-  <button onclick="inverse()"> 1/x </button>
+	<h1>Rafael Conde Gómez</h1>
+
+  Number:
+
+  <input type="text" id="n1"><p>
+  
+  <button onclick="inverse()"> <b>1/x </b></button>
+  <button onclick="square()"> <b>x<sup>2</sup> </b></button>
+
 </body>
 </html>
